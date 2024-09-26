@@ -1,6 +1,6 @@
-## AWS Amplify React + Vite Portfolio
+# AWS Amplify React + Vite TS Portfolio
 
-Developed through the starter template for creating applications using React, Vite and AWS Amplify.
+Developed through the starter template for creating applications using React, Vite, Typescript and AWS Amplify.
 
 # Changelog (v1.0, 9/25/24)
 ## Homepage Refactor
