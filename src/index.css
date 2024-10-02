@@ -1,19 +1,35 @@
+/* General */
+:root {
+    --darkgreen: #61892F;
+    --green: #86C232;
+    --black: #222629;
+    --grey: #474B4F;
+    --light-grey: #6B6E70;
+}
+
 * {
     box-sizing: border-box;
+    /* border: 1px solid red; */
+    /* padding: 15px; */
 }
 
 body {
     margin: 0;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--black);
 }
+
+/* Routing */
 
 .container {
-    margin: 1rem;
-    text-align: center ;
+    display: flex;
+    justify-content: space-around;
+    height: 85vh;
 }
 
+/* Navigation Bar */
 .nav {
-    background-color: #333;
+    background-color: var(--darkgreen);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -44,9 +60,54 @@ ul li {
 }
 
 .nav li.active {
-    background-color: #555;
+    background-color: var(--grey);
 }
 
 .nav li:hover {
-    background-color: #777;
+    background-color: var(--light-grey);
+}
+
+/* Home Page */
+
+.home-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2.22em;
+}
+
+.home-seperator {
+    margin: 0.5em 0 0.5em 0;
+    border-color: var(--darkgreen);
+    border-width: 0.2em;
+}
+
+#home-title {
+    color: var(--green);
+    margin-bottom: 0;
+    font-size: 2.66em;
+}
+
+#home-paragraph {
+    color: white;
+}
+
+#home-paragraph p {
+    margin: 0;
+    color: white;
+    font-size: 1.13em;
+}
+
+/* Carousel Component */
+
+.carousel-container {
+    width: 40%;
+    margin: auto 0 auto 0;
+}
+
+.carousel-item {
+    width: 10em;
+    height: 20em;
 }
